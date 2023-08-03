@@ -34,15 +34,16 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: fit-content;
-    min-width: 24.0rem;
-    padding: 1.6rem 2.0rem 1.6rem 2.4rem;
+    height: 4.6rem;
+    padding: 1.6rem 3.2rem 1.6rem 2.4rem;
+    border-radius: 6px;
     background: #FBFBFB;
-    font-family: $font_gothic;
-    font-weight: 500;
+    font-family: "Noto Sans CJK JP";
+    font-weight: 700;
     font-size: 1.5rem;
-    line-height: 2.6rem;
+    line-height: 3.2rem;
     letter-spacing: 0.08em;
     color: #3E3A39;
     text-align: left;
@@ -50,7 +51,7 @@
     text-decoration: none;
     border: none;
     outline: none;
-    transition: background 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: all 0.6s cubic-bezier(0.8, 0, 0.2, 1);
     overflow: hidden;
     cursor: pointer;
     z-index: 0;
@@ -95,7 +96,7 @@
         top: 0;
         left: 0;
         display: block;
-        background: #3E3A39;
+        background: #68d5f6;
         width: 100%;
         height: 100%;
         transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1);
@@ -114,6 +115,58 @@
         }
     }
 }
+
+.btn-rightarrow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    min-width: 24rem;
+    padding: 1.5rem 5.6rem;
+    border-radius: 7rem;
+    border: 1px solid #AEAEAE;
+    background: #FFF;
+    color: #333;
+    font-family: "Noto Sans CJK JP";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6rem; /* 100% */
+    text-align: left;
+    white-space: nowrap;
+    text-decoration: none;
+    -webkit-transition: background 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+    transition: background 0.6s cubic-bezier(0.8, 0, 0.2, 1);
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    @include media('sp') {
+        max-width: 33.5rem;
+        width: 100%;
+        padding: 1.8rem 2.4rem 1.8rem 2.4rem;
+    }
+    svg{
+        margin-left: 1rem;
+    }
+    &:hover svg {
+        animation: bounce 0.8s infinite;
+      }
+      
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(15px);
+        }
+        /* 60% {
+          transform: translateX(12px);
+        } */
+      }
+}
+
+
 
 .dark-btn {
     position: relative;

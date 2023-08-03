@@ -1,0 +1,619 @@
+.mainview {
+    margin-top: 15rem;
+    padding-left: 8rem;
+    width: 100%;
+    @include media("sp") {
+        margin-left: 0;
+        padding: 0 1.6rem;
+    }
+    .introduction {
+        position: relative;
+        z-index: 100;
+        @include media("sp") {
+            display: block;
+            position: relative;
+            float: none;
+            margin-top: 65rem;
+        }
+        .top-text {
+            color: #333;
+            margin-top: 20.6rem;
+            font-family: "Noto Sans CJK JP";
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 3.2rem; /* 100% */
+            @include media("sp") {
+                margin-top: 4.0rem;
+                font-size: 2.4rem;
+            }
+        }
+        .top-title {
+            margin-top: 4rem;
+            margin-bottom: 5.6rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 7.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 8rem; /* 100% */
+            @include media("sp") {
+                margin-top: 2.8rem;
+                margin-bottom: 3.6rem;
+                font-size: 4.0rem;
+                line-height: 6.0rem;
+            }
+        }
+        .desc {
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.6rem; /* 100% */
+            @include media("sp") {
+                font-size: 1.7rem;
+                line-height: 2.4rem; /* 100% */
+            }
+        }
+        .price-text {
+            margin: 3.2rem 0 7.2rem 0;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 3.2rem; /* 100% */
+            @include media("sp") {
+                margin: 2.4rem 0 4.0rem 0;
+                font-size: 2.4rem;
+            }
+            span {
+                margin: 0 0.8rem;
+                color: #125EC9;
+                font-family: "Montserrat";
+                font-size: 6.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 6.4rem; /* 100% */
+                @include media("sp") {
+                    font-size: 4.0rem;
+                }
+            }
+        }
+        .contact-btns {
+            margin: 2.4rem 0 3.2rem 0;
+            @include media("sp") {
+                width: 100%;
+                margin: 2.0rem 0 2.6rem 0;
+                flex-direction: column;
+                li {
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+                & > li:first-child {
+                    margin-bottom: 0.8rem;
+                }
+            }
+        }
+        .btn-rightarrow {
+            @include media("sp") {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+    img {
+        display: block;
+        position: absolute;
+    }
+    .cxo-image {
+        top: 23.6rem;
+        right: 0rem;
+        width: 60%;
+        height: auto;
+        z-index: 0;
+        @include media("sp") {
+            top: 24rem;
+            width: 80%;
+        }
+    }
+    .bars-pic {
+        top: 15rem;
+        right: 0rem;
+        width: 65%;
+        height: 70rem;
+        z-index: 10;
+        @include media("sp") {
+            top: 7.2rem;
+            width: 100%;
+            height: 50rem;
+        }
+    }
+    .mans-couple {
+        top: 57rem;
+        right: 3rem;
+        width: 15%;
+        height: auto;
+        z-index: 20;
+        @include media("sp") {
+            top: 40rem;
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+.features {
+    margin-top: 14rem;
+    .title-wrapper {
+        margin-bottom: 2.4rem;
+    }
+    .feature-wrapper {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 6.0rem;
+        @include media("sp") {
+            margin-bottom: 4.0rem;
+        }
+        img {
+            width: 46%;
+            height: auto;
+        }
+        .content-wrapper {
+            width: 48%;
+            height: fit-content;
+            .first-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 4rem;
+                color: #2C72A2;
+                font-family: "Noto Sans CJK JP";
+                font-size: 2.4rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 2.4rem; /* 100% */
+                span {
+                    width: 4rem;
+                    height: 4rem;
+                    margin-left: 1.4rem;
+                    border-radius: 50%;
+                    background-color: #2C72A2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #FFF;
+                    font-family: "Montserrat";
+                    font-size: 2rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 2rem; /* 100% */
+                    letter-spacing: 0.8px;
+                }
+            }
+            .second-title {
+                margin-bottom: 3.2rem;
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 3.2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 4.8rem; /* 100% */
+            }
+            .desc {
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 3.6rem; /* 225% */
+            }
+        }
+    }
+}
+
+.community {
+    background-color: #DCEEE6;
+    padding-bottom: 1rem;
+    .title-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-wrap: nowrap;
+        text-align: center;
+        margin: 6rem auto 4.6rem auto;
+        .title-text {
+            margin-top: 2.4rem;
+        }
+        .main-title {
+            left: calc(50% - 18.8rem);
+        }
+    }
+    .desc {
+        width: fit-content;
+        margin: 0 auto 6.4rem auto;
+        text-align: center;
+        color: #333;
+        text-align: center;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.6rem; /* 225% */
+    }
+    .slider-wrapper {
+        display: flex;
+        width: fit-content;
+        position: relative;
+        .slider-item {
+            display: block;
+            position: relative;
+            margin-right: 3.9rem;
+            width: 37.4rem;
+            .item-wrapper {
+                display: block;
+                position: relative;
+                width: 100%;
+                border-radius: 6px;
+                img {
+                    border-radius: 6px 6px 0 0;
+                    width: 100%;
+                    height: auto;
+                }
+                .content-wrapper {
+                    padding: 2.0rem 2.4rem;
+                    .title {
+                        margin-bottom: 1rem;
+                        color: #333;
+                        font-family: "Montserrat";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.6rem; /* 100% */
+                    }
+                    .content {
+                        color: #333;
+                        font-family: "Montserrat";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 2.6rem; /* 150% */
+                    }
+                }
+            }
+        }
+    }
+    .btn-rightarrow {
+        margin: 2.0rem auto 6.0rem auto;
+    }
+}
+
+.news {
+    padding: 2.4rem 0 6.0rem 0;
+    .title-wrapper {
+        .main-title {
+            left: calc(50% - 18.8rem);
+        }
+    }
+    .btn-rightarrow {
+        margin: 4.0rem auto;
+    }
+}
+
+.case {
+    padding: 2.4rem 0 6.0rem 0;
+    background-color: #DEF2F6;
+    .female {
+        display: block;
+        position: relative;
+        z-index: 50;
+        img {
+            width: 13.9rem;
+            display: block;
+            position: absolute;
+            left: 25.1%;
+            top: -7.0rem;   
+        }
+    }
+    .title-wrapper {
+        .title-text {
+            text-align: end;
+        }
+        .main-title {
+            left: calc(50% - 18.8rem);
+        }
+    }
+    .desc {
+        margin: 6.4rem auto 3.2rem auto;
+        color: #333;
+        text-align: center;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.6rem; /* 225% */
+    }
+    .item-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0px, 1fr));
+        grid-column-gap: 4rem;    
+        grid-template-rows: repeat(2, minmax(0px, 1fr));
+        grid-row-gap: 4.8rem;  
+        .content-wrapper {
+            display: block;
+            padding: 1.6rem;
+            border-radius: 6px;
+            background: #FFF;
+            box-shadow: 0px 0px 6px 4px rgba(210, 210, 210, 0.25);
+            .top-section {
+                display: flex;
+                align-items: center;
+                margin-bottom: 2.1rem;
+                img {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    margin-right: 1.2rem;
+                }
+                .top-text {
+                    .head {
+                        margin-bottom: 0.6rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.4rem; /* 150% */
+                    }
+                    .gender {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.4rem; /* 100% */
+                    }
+                }
+            }
+            .middle-section {
+                display: flex;
+                align-items: center;
+                .left {
+                    position: relative;
+                    width: 7.4rem;
+                    height: 12.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #F4F4F4;
+                    margin-right: 1.6rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.6rem; /* 100% */
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        background-image: url(/assets/img/down-mark.png);
+                        width: 3.6rem;
+                        height: 2.2rem;
+                        left: calc(50% - 1.2rem);
+                        bottom: -0.2rem;
+                        transform: rotate(135deg);
+                    }
+                }
+                .right {
+                    width: 74%;
+                    .top-text {
+                        margin-bottom: 0.65rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2.0rem; /* 142.857% */
+                    }
+                    .middle-text {
+                        margin-bottom: 1.0rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.6rem; /* 100% */
+                    }
+                    .bottom-text {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.4rem; /* 100% */
+                        letter-spacing: 0.56px;
+                        span {
+                            color: #333;
+                            font-family: "Montserrat";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 0.64px;
+                        }
+                    }
+                }
+            }
+            .bottom-section {
+                display: flex;
+                align-items: center;
+                .left {
+                    width: 7.4rem;
+                    height: 12.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #3472A1;
+                    margin-right: 1.6rem;
+                    color: #F4F4F4;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.5rem; /* 100% */
+                }
+                .right {
+                    width: 74%;
+                    .top-text {
+                        margin-bottom: 0.6rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2.0rem; /* 142.857% */
+                    }
+                    .middle-text {
+                        margin-bottom: 1.3rem;
+                        color: #3472A1;
+                        font-family: "Montserrat";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.6rem; /* 100% */
+                    }
+                    .bottom-text {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.4rem; /* 100% */
+                        letter-spacing: 0.56px;
+                        span {
+                            color: #3472A1;
+                            font-family: "Montserrat";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 0.64px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-wrapper {
+    display: block;
+    position: relative;
+    .title-text {
+        color: #EDF2F7;
+        font-family: "Montserrat";
+        font-size: 23rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25rem; /* 108.696% */
+    }
+    .main-title {
+        display: block;
+        position: absolute;
+        top: calc(50% - 1.7rem);
+        left: 88rem;
+    }
+}
+
+.main-title {
+    color: #333;
+    font-family: "Noto Sans CJK JP";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 4rem; /* 100% */
+    letter-spacing: 0.04em;
+}
+
+.news-wrapper {
+    display: block;
+    position: relative;
+    .news-item {
+        padding: 0 0 1.9rem 0;
+        border-bottom: 1px solid #D3D3D3;
+        .item {
+            display: flex;
+            li {
+                width: fit-content;
+                .date {
+                    color: #000;
+                    font-family: "Montserrat";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1.6rem; /* 100% */
+                }
+                .title {
+                    display: block;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 2.6rem; /* 100% */
+
+                }
+            }
+            & > li:not(:last-child) {
+                margin-right: 3.6rem;
+            }
+            & > li:first-child {
+                display: block;
+                width: 10rem;
+            }
+            & > li:nth-child(2) {
+                display: block;
+                width: 22rem;
+            }
+            & > li:last-child {
+                display: block;
+                width: 70%;
+            }
+        }
+    }
+    .news-item:not(:last-child) {
+        margin-bottom: 1.9rem;
+    }
+}
+
+.category {
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0.6rem 1.4rem;
+    text-wrap: nowrap;
+    background-color: #D5E3EC;
+    border-radius: 50px;
+    color: #333;
+    font-family: "Noto Sans CJK JP";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1rem;
+
+}

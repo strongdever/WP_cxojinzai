@@ -1,16 +1,235 @@
 #footer {
+    #fixed-btns {
+        width: 100%;
+        display: none;
+        position: fixed;
+        bottom: 0.8rem;
+        z-index: 900;
+        .contact-btns {
+            width: 100%;
+        }
+    }
     position: relative;
     padding: 0;
     margin: 0;
     z-index: 0;
+    .contact-wrapper {
+        display: flex;
+        width: 100%;
+        height: 28rem;
+        @include media("sp") {
+            flex-direction: column;
+            height: fit-content;
+        }
+        li {
+            position: relative;
+            width: 100%;
+            padding-bottom: 1.8rem;
+            img {
+                display: block;
+                position: relative;
+                width: auto;
+                height: 20rem;
+                margin: -10rem auto 1.2rem auto;
+                z-index: 10;
+            }
+            .desc {
+                display: block;
+                width: fit-content;
+                margin: 0 auto 1.6rem auto;
+                color: #FFF;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.6rem; /* 100% */
+            }
+
+            .btn {
+                position: relative;
+                width: 31.4rem;
+                height: 6.4rem;
+                margin: 0 auto;
+                background-color: #fff;
+                span {
+                    color: #0099BD;
+                }
+                &:hover span {
+                    color: #fff;
+                }
+            }
+            .btn.female {
+                &::before {
+                    background-color: #3472A1;
+                }
+            }
+            .btn.male {
+                &::before {
+                    background-color: #0099BD;
+                }
+            }
+        }
+        & > li:first-child {
+            background-color: #0099BD;
+            @include media("sp") {
+                margin-bottom: 12rem;
+            }
+        }
+        & > li:last-child {
+            background-color: #3472A1;
+        }
+    }
     .footer-main {
         position: relative;
         width: 100%;
-        padding: 6.4rem 0;
-        background-image: url(../img/footer-bg.webp);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: #F9F9F9; 
+        .footer-wrapper {
+            padding: 5.6rem 6rem;
+            display: flex;
+            justify-content: space-between;
+            @include media("sp") {
+                flex-direction: column;
+                padding: 5.2rem 1.6rem 3.2rem 1.6rem;
+            }
+            li {
+                width: auto;
+            }
+            & > li:not(:last-child) {
+                margin-right: 5.6rem;
+                @include media("sp") {
+                    margin-right: 0;
+                    margin-bottom: 2.8rem;
+                    padding-bottom: 2.0rem;
+                    border-bottom: 1px solid #D6D6D6;
+                }
+            }
+            & > li:first-child {
+                margin-right: 12.6rem;
+                @include media("sp") {
+                    margin-right: 0;
+                    margin-bottom: 4.8rem;
+                }
+            }
+            .logo-wrapper {
+                position: relative;
+                & > li {
+                    @include media("sp") {
+                        text-align: center;
+                    }
+                }
+                & > li:not(:last-child) {
+                    margin-bottom: 3.3rem;
+                }
+                .logo {
+                    width: 33.2rem;
+                    height: auto;
+                    @include media("sp") {
+                        width: 24rem;
+                    }
+                }
+                .social {
+                    width: 4rem;
+                    height: 4rem;
+                    @include media("sp") {
+                        width: 3.6rem;
+                        height: 3.6rem;
+                    }
+                }
+                .social.twitter {
+                    margin-right: 1.2rem;
+                }
+                & > li:last-child {
+                    display: flex;
+                    align-items: center;
+                    max-width: 36rem;
+                }
+                .mark {
+                    display: block;
+                    width: 6.2rem;
+                    height: 6.2rem;
+                    margin-right: 1.2rem;
+                    @include media("sp") {
+                        width: 5.2rem;
+                        height: 5.2rem;
+                    }
+                }
+                .desc {
+                    display: block;
+                    color: #4C4949;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.3rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.8rem; /* 138.462% */
+                }
+            }
+            .footer-nav {
+                position: relative;
+                .nav-menu {
+                    position: relative;
+                    @include media('pc') {
+                        flex-wrap: nowrap;
+                        justify-content: center;  
+                    }
+                    @include media('tb') {
+                        flex-wrap: wrap;
+                    }
+                    @include media('sp') {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    & > li {
+                        position: relative;
+                        span {
+                            color: #4C4949;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.4rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 2.0rem; /* 100% */
+                            &:hover {
+                                color: #41449d;
+                            }
+                        }
+                    }
+                    & > li:first-child {
+                        span {
+                            color: #333;
+                            font-family: "Inter";
+                            font-weight: 700;
+                        }
+                        @include media("sp"){
+                            margin-bottom: 1.4rem !important;
+                        }
+                    }
+                    & > li:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                        @include media("sp"){
+                            margin-bottom: 1.0rem;
+                        }
+                    }
+                    a {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        font-family: $font_gothic;
+                        font-weight: 500;
+                        font-size: 1.5rem;
+                        line-height: 1.8;
+                        letter-spacing: 0.08em;
+                        color: #FBFBFB;
+                        i {
+                            display: inline-block;
+                            font-size: 70%;
+                            margin-left: 0.6rem;
+                        }
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
         .footer-logo {
             position: relative;
             width: 40.0rem;
@@ -73,97 +292,82 @@
                 margin-top: 0.4rem;
             }
         }
-        .footer-action {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: -1.5rem;
-            margin-right: -1.5rem;
-            @include media('sp') {
-                flex-wrap: wrap;
-            }
-            & > li {
-                position: relative;
-                padding: 0 1.5rem;
-                @include media('sp') {
-                    flex: 0 0 auto;
-                    width: 100%;
-                    &:not(:last-child) {
-                        margin-bottom: 2.0rem;
-                    }
-                    .btn {
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                }
-            }
-        }
+    }
+    span.line {
+        display: block;
+        position: relative;
+        width: 92%;
+        height: 1px;
+        background-color: #D6D6D6;
+        margin-left: auto;
+        margin-right: auto;
     }
     .footer-bottom {
         position: relative;
         width: 100%;
-        padding: 4.0rem 0 2.0rem;
-        background: #3E3A39;
-        .footer-nav {
-            position: relative;
-            margin-bottom: 4.0rem;
-            .nav-menu {
-                position: relative;
-                @include media('pc') {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin-left: -1.2rem;
-                    margin-right: -1.2rem;    
-                }
-                @include media('sp') {
-                    display: grid;
-                    grid-template-columns: repeat(2, minmax(0rem, 1fr));
-                    grid-template-rows: repeat(5, 1fr);
-                    grid-column-gap: 0rem;
-                    grid-row-gap: 1.6rem;
-                    grid-auto-flow: column;
-                }
-                & > li {
-                    position: relative;
-                    @include media('pc') {
-                        padding: 0 1.2rem;
-                    }
-                }
-                a {
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    font-family: $font_gothic;
-                    font-weight: 500;
-                    font-size: 1.5rem;
-                    line-height: 1.8;
-                    letter-spacing: 0.08em;
-                    color: #FBFBFB;
-                    i {
-                        display: inline-block;
-                        font-size: 70%;
-                        margin-left: 0.6rem;
-                    }
-                    &:hover {
-                        text-decoration: underline;
-                    }
-                }
-            }
-        }
+        height: 6.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         .copyright {
             position: relative;
-            font-family: $font_gothic;
-            font-weight: 500;
-            font-size: 1.2rem;
-            line-height: 2.0;
-            text-align: center;
-            letter-spacing: 0.08em;
-            color: #FFFFFF;
+            color: #4C4949;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.4rem; /* 100% */
             @include media('sp') {
                 font-size: 1.0rem;
             }
+        }
+    }
+    .footer-end {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: 100%;
+        padding: 11rem 0 0 0 ;
+        background-color: #fff;
+        justify-content: center;
+        align-items: flex-end;
+        @include media("sp") {
+            display: none;
+        }
+        img.female {
+            width: 16.8rem;
+            height: auto;
+        }
+        .contact-btns {
+            display: flex;
+            margin: 2rem 1.5rem;
+            width: fit-content;
+            li {
+                list-style: none;
+                width: 100%;
+                height: fit-content;
+                .desc {
+                    color: #23A1F2;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.5rem; /* 100% */
+                    margin-bottom: 1.2rem;
+                }
+                .btn {
+                    margin: 0 auto;
+                }
+            }
+            & > li:first-child {
+                margin-right: 2.4rem;
+            }
+        }
+        img.male {
+            width: 13.6rem;
+            height: auto;
         }
     }
 }
