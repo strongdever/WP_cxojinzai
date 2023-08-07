@@ -4103,7 +4103,7 @@ body.mobile-nav-active #mobile-nav {
 .case .item-wrapper .content-wrapper .middle-section .left::after {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/down-mark.png);
+  background-image: url(../img/down-mark.png);
   width: 3.6rem;
   height: 2.2rem;
   left: calc(50% - 1.2rem);
@@ -4983,7 +4983,7 @@ body.mobile-nav-active #mobile-nav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  background-image: url("/assets/img/background.png");
+  background-image: url("../img/background.png");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -5029,7 +5029,7 @@ body.mobile-nav-active #mobile-nav {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  background-image: url("/assets/img/background02.png");
+  background-image: url("../img/background02.png");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -5646,7 +5646,7 @@ img {
 #usecase .content-wrapper .middle-section .left::after {
   position: absolute;
   content: "";
-  background-image: url(/assets/img/down-mark.png);
+  background-image: url(../img/down-mark.png);
   width: 3.6rem;
   height: 2.2rem;
   left: calc(50% - 1.2rem);
@@ -6211,7 +6211,7 @@ img {
 }
 
 #consults-differ .common-firstview {
-  background-image: url("/assets/img/background02.png");
+  background-image: url("../img/background02.png");
   width: 100%;
   height: 13.9vw;
   -webkit-box-align: center;
@@ -6354,6 +6354,18 @@ img {
   margin-bottom: 3.2rem;
 }
 
+#consults-differ .container .part2 .content {
+  margin-bottom: 9.6rem;
+  color: #333;
+  font-family: "Noto Sans CJK JP";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.6rem;
+  /* 225% */
+  letter-spacing: 1.6px;
+}
+
 #consults-differ .container .part2 .subtitle {
   margin-top: 9.6rem;
   margin-bottom: 4.0rem;
@@ -6414,6 +6426,10 @@ img {
   line-height: 3.2rem;
   /* 200% */
   letter-spacing: 1.6px;
+}
+
+#consults-differ .container .part3 {
+  margin-bottom: 8rem;
 }
 
 #consults-differ .container .part3 .desc {
@@ -6487,42 +6503,49 @@ img {
   font-size: 1.2rem;
 }
 
-#flow-support .container {
-  padding-top: 10rem;
-  padding-bottom: 22.6rem;
-}
-
-#flow-support .container .first-section {
+#flow-support .first-section {
   margin-bottom: 10.4rem;
 }
 
-#flow-support .container .first-section .maintitle {
+#flow-support .first-section .maintitle {
   margin-bottom: 3.2rem;
 }
 
-#flow-support .container .first-section .desc {
+#flow-support .first-section .desc {
   margin-bottom: 3.2rem;
 }
 
-#flow-support .container .content {
+#flow-support .content {
+  padding: 6.8rem 12rem 22.7rem 12rem;
+}
+
+#flow-support .content .part1 {
+  margin-bottom: 10.4rem;
+}
+
+#flow-support .content .part1 .maintitle {
+  margin-bottom: 3.2rem;
+}
+
+#flow-support .content .part1 .desc {
+  margin-bottom: 3.2rem;
+}
+
+#flow-support .content .part2 .maintitle {
   margin-bottom: 7.2rem;
 }
 
-#flow-support .container .content .maintitle {
-  margin-bottom: 7.2rem;
-}
-
-#flow-support .container .content .flow-steps {
+#flow-support .content .part2 .flow-steps {
   display: block;
   position: relative;
   margin-bottom: 10.4rem;
 }
 
-#flow-support .container .content .flow-steps .each-step:not(:last-child) {
+#flow-support .content .part2 .flow-steps .each-step:not(:last-child) {
   padding-bottom: 7.2rem;
 }
 
-#flow-support .container .content .flow-steps .each-step:not(:last-child)::before {
+#flow-support .content .part2 .flow-steps .each-step:not(:last-child)::before {
   position: absolute;
   content: "";
   width: 2px;
@@ -6532,13 +6555,13 @@ img {
   background-color: #3472A1;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper {
+#flow-support .content .part2 .flow-steps .step-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-number {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-number {
   aspect-ratio: 1 / 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6561,7 +6584,7 @@ img {
   border-radius: 50px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-number .label {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-number .label {
   color: #FFF;
   font-family: "Montserrat";
   font-size: 1.2rem;
@@ -6573,7 +6596,7 @@ img {
   margin-bottom: 0.3rem;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-number .num {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-number .num {
   color: #FFF;
   font-family: "Montserrat";
   font-size: 2.8rem;
@@ -6584,12 +6607,12 @@ img {
   letter-spacing: 3.8px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content {
   margin-right: 6.2rem;
   width: 70%;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .step-title {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .step-title {
   margin-bottom: 2.4rem;
   color: var(--darkblue, #3472A1);
   font-family: "Noto Sans CJK JP";
@@ -6601,7 +6624,7 @@ img {
   letter-spacing: 2.4px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .desc {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .desc {
   color: #333;
   font-family: "Noto Sans CJK JP";
   font-size: 1.6rem;
@@ -6612,11 +6635,11 @@ img {
   letter-spacing: 1.6px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .contact-btns {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .contact-btns {
   margin-top: 4rem;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .note {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .note {
   margin-top: 2.4rem;
   color: #333;
   font-family: "Noto Sans CJK JP";
@@ -6628,13 +6651,13 @@ img {
   letter-spacing: 1.4px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .method {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .method {
   margin-top: 2.4rem;
   padding: 2.4rem;
   background-color: #E6F5F8;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .method .title {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .method .title {
   margin-bottom: 1.6rem;
   color: #333;
   font-family: "Noto Sans CJK JP";
@@ -6646,7 +6669,7 @@ img {
   letter-spacing: 1.6px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .step-content .method .content {
+#flow-support .content .part2 .flow-steps .step-wrapper .step-content .method .content {
   padding: 0;
   color: #000;
   font-family: "Noto Sans CJK JP";
@@ -6658,7 +6681,7 @@ img {
   letter-spacing: 1.6px;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .img-wrapper {
+#flow-support .content .part2 .flow-steps .step-wrapper .img-wrapper {
   display: block;
   position: relative;
   margin-left: auto;
@@ -6666,7 +6689,7 @@ img {
   margin-top: auto;
 }
 
-#flow-support .container .content .flow-steps .step-wrapper .img-wrapper img {
+#flow-support .content .part2 .flow-steps .step-wrapper .img-wrapper img {
   display: block;
   width: 24.6rem;
   margin-top: auto;
@@ -6674,7 +6697,7 @@ img {
   margin-left: auto;
 }
 
-#flow-support .container .btn-rightarrow.bottom {
+#flow-support .btn-rightarrow.bottom {
   margin-bottom: 7.2rem;
 }
 
@@ -7609,6 +7632,10 @@ img {
 }
 
 #single-interview .part1 .subtitle {
+  margin-bottom: 4rem;
+}
+
+#single-interview .part1 .desc {
   margin-bottom: 4rem;
 }
 
