@@ -1,0 +1,1483 @@
+#consults-differ {
+    .common-firstview {
+        background-image: url("/assets/img/background02.png");
+        width: 100%;
+        height: 13.9vw;
+        align-items: center;
+    }
+    .container {
+        max-width: 144rem;
+        padding-top: 14rem;
+        padding-bottom: 22.6rem;
+        .maintitle {
+            margin-bottom: 3.2rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 4.8rem; /* 100% */
+            letter-spacing: 3.2px;
+        }
+        .subtitle {
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2.4rem;    
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.4rem; /* 100% */
+            letter-spacing: 2.4px;              
+        }
+        .desc {
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 3.6rem; /* 225% */
+            letter-spacing: 1.6px;
+        }
+        .part1 {
+            margin-bottom: 10.4rem;
+            .desc {
+                margin-bottom: 5.6rem;
+            }
+            .concept {
+                display: flex;
+                width: 100%;
+                li {
+                    width: 100%;
+                }
+                .specific {
+                    margin-right: 6.4rem;
+                    .title {
+                        background-color: #3472A1;
+                        border: 2px solid #3472A1;
+                        border-radius: 6px 6px 0 0;
+                    }
+                    .content {
+                        border: 2px solid #3472A1;
+                        border-radius: 0 0 6px 6px;
+                    }
+                }
+                .long-term {
+                    .title {
+                        background-color: #0099BD;
+                        border: 2px solid #0099BD;
+                        border-radius: 6px 6px 0 0;
+                    }
+                    .content {
+                        border: 2px solid #0099BD;
+                        border-radius: 0 0 6px 6px;
+                    }
+                }
+                .title {
+                    color: #FFF;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 2.0rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2.0rem; /* 100% */
+                    letter-spacing: 2px;
+                    padding-top: 1.4rem;
+                    padding-bottom: 1.4rem;
+                    border-radius: 6px 6px 0 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .content {
+                    padding: 2.4rem 4.7rem 4.4rem 4.7rem;
+                    text-align: center;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 3.6rem; /* 225% */
+                    letter-spacing: 1.6px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 0 0 6px 6px;
+                }
+            }
+        }
+        .part2 {
+            .maintitle {
+                margin-bottom: 3.2rem;    
+            }
+            .subtitle {
+                margin-top: 9.6rem;
+                margin-bottom: 4.0rem;
+            }
+            .img1 {
+                width: 100%;
+                height: auto;
+            }
+            .sweet-blues {
+                display: flex;
+                width: 100%;
+                position: relative;
+                margin-top: 4.0rem;
+                margin-bottom: 10.4rem;
+                .img2 {
+                    width: 36%;
+                    margin-right: 5.6rem;
+                }
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .seet-title {
+                        margin-bottom: 2.4rem;
+                        color: #333;
+                        font-family: "Montserrat";
+                        font-size: 2.4rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.4rem; /* 100% */
+                        letter-spacing: 2.4px;
+                    }
+                    .desc {
+                        margin-bottom: 3.2rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 3.2rem; /* 200% */
+                        letter-spacing: 1.6px;
+                    }
+                }
+            }
+        }
+        .part3 {
+            .desc {
+                margin-bottom: 9.6rem;
+            }
+            .subtitle {
+                margin-bottom: 5.6rem;
+            }
+            .img3 {
+                width: 100%;
+            }
+        }
+        .related-label {
+            margin-bottom: 2.8rem;
+            padding-bottom: 1.6rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2.0rem; /* 125% */
+            letter-spacing: 1.6px;
+            border-bottom: 3px solid #0099BD;
+        }
+        .gotopage {
+            margin-bottom: 2.4rem;
+            color: #333;
+            font-family: Noto Sans CJK JP;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 100% */
+            letter-spacing: 1.6px;
+            display: flex;
+            width: fit-content;
+            &:hover {
+                color: #3472A1;
+            }
+            span {
+                width: 2.2rem;
+                height: 2.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #0099BD;
+                border-radius: 50px;
+                margin-right: 1.8rem;
+                cursor: pointer;
+                i {
+                    color: #fff;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+#flow-support {
+    .container {
+        padding-top: 10rem;
+        padding-bottom: 22.6rem;
+        .first-section {
+            margin-bottom: 10.4rem;
+            .maintitle {
+                margin-bottom: 3.2rem;
+            }
+            .desc {
+                margin-bottom: 3.2rem;
+            }
+        }
+        .content {
+            margin-bottom: 7.2rem;     
+            .maintitle {
+                margin-bottom: 7.2rem;
+            }
+            .flow-steps {
+                display: block;
+                position: relative;
+                margin-bottom: 10.4rem;
+                .each-step:not(:last-child) {
+                    padding-bottom: 7.2rem;
+                }
+                .each-step:not(:last-child)::before {
+                    position: absolute;
+                    content: "";
+                    width: 2px;
+                    height: 100%;
+                    left: 3.2rem;
+                    top: 3.2rem;
+                    background-color: #3472A1;                
+                }
+                .step-wrapper {
+                    display: flex;
+                    .step-number {
+                        aspect-ratio: 1 / 1;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        margin-right: 3.2rem;
+                        width: 6.4rem;
+                        height: 6.4rem;
+                        background-color: #3472A1;
+                        border-radius: 50px;
+                        .label {
+                            color: #FFF;
+                            font-family: "Montserrat";
+                            font-size: 1.2rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.2rem;
+                            letter-spacing: 1.2px;
+                            margin-top: 0.3rem;
+                            margin-bottom: 0.3rem;
+                        }
+                        .num {
+                            color: #FFF;
+                            font-family: "Montserrat";
+                            font-size: 2.8rem;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 2.8rem; /* 100% */
+                            letter-spacing: 3.8px;
+                        }
+                    }
+                    .step-content {
+                        margin-right: 6.2rem;
+                        width: 70%;
+                        .step-title {
+                            margin-bottom: 2.4rem;
+                            color: var(--darkblue, #3472A1);
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 2.4rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 2.4rem; /* 100% */
+                            letter-spacing: 2.4px;
+                        }
+                        .desc {
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 3.2rem; /* 200% */
+                            letter-spacing: 1.6px;
+                        }
+                        .contact-btns {
+                            margin-top: 4rem;
+                        }
+                        .note {
+                            margin-top: 2.4rem;
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.4rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.4rem; /* 100% */
+                            letter-spacing: 1.4px;
+                        }
+                        .method {
+                            margin-top: 2.4rem;
+                            padding: 2.4rem;
+                            background-color: #E6F5F8;
+                            .title {
+                                margin-bottom: 1.6rem;
+                                color: #333;
+                                font-family: "Noto Sans CJK JP";
+                                font-size: 1.6rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 1.6rem; /* 100% */
+                                letter-spacing: 1.6px;
+                            }
+                            .content {
+                                padding: 0;
+                                color: #000;
+                                font-family: "Noto Sans CJK JP";
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 32px; /* 200% */
+                                letter-spacing: 1.6px;
+                            }
+                        }
+                    }
+                    .img-wrapper {
+                        display: block;
+                        position: relative;
+                        margin-left: auto;
+                        height: 100% !important;
+                        margin-top: auto;
+                        img {
+                            display: block;
+                            width: 24.6rem;
+                            margin-top: auto;
+                            height: auto;
+                            margin-left: auto;
+                        }
+                    }
+                }
+            }
+        }
+        .btn-rightarrow.bottom {
+            margin-bottom: 7.2rem;
+        }
+    }
+}
+
+#features {
+    .maintitle {
+        width: fit-content;
+        color: #333;
+        text-align: center;
+        font-family: "Noto Sans CJK JP";
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.8rem; /* 100% */
+        letter-spacing: 3.2px;
+    }
+    .desc {
+        color: #000;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.2rem; /* 200% */
+        letter-spacing: 1.6px;
+    }
+    .part1 {      
+        margin: 6.4rem 12rem 9.6rem 12rem;
+        .maintitle {
+            margin: 0 auto 3.2rem auto;
+        }
+        .desc {
+            margin: 0 auto 6.4rem auto;
+            text-align: center;
+        }
+        img {
+            display: block;
+            width: 62%;
+            margin: 0 auto;
+        }
+    }
+    .part2 {
+        margin: 0 12rem 11rem 12rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 12rem 9.6rem 12rem;
+        img {
+            display: block;
+            width: 30%;
+            margin-right: 11rem;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            .maintitle {
+                margin-bottom: 3.2rem;
+                text-align: start;
+            }
+            .desc {
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+    .part3 {
+        margin: 0 12rem 12rem 14rem;
+        position: relative;
+        .maintitle {
+            margin-bottom: 6.4rem;
+        }
+        .sub-title {
+            color: #333;
+            text-align: center;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.8rem; /* 100% */
+            letter-spacing: 1.8px;
+        }
+        .top-wrapper, .bottom-wrapper {
+            width: 85%;
+            margin: 0 auto 0 auto;
+            border-radius: 6px;
+            background-color: #E6F5F8;
+            padding: 3.2rem;
+            .sub-title {
+                width: 100%;
+                margin: 0 auto 2.8rem auto;
+            }
+            .imgs {
+                display: flex;
+                width: 100%;
+                margin-bottom: 3.8rem;
+                li {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        margin-bottom: 1.6rem;
+                    }
+                }
+                & > li:not(:last-child) {
+                    margin-right: 3.2rem;
+                }
+            }
+            .btn-rightarrow {
+                margin: 0 auto;
+            }
+        }
+        .diagrams {
+            display: flex;
+            position: relative;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            width: 60%;
+            margin: 1.6rem auto;
+            .diagram {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .side {
+                    width: 33%;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2rem; /* 133.333% */
+                    letter-spacing: 1.5px;
+                    span {
+                        width: fit-content;
+                        text-align: center;
+                    }
+                }
+                .side1 {
+                    color: #3472A1;
+                }
+                .side2 {
+                    color: #0099BD;
+                }
+                .left {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .right {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                img {
+                    width: 12%;
+                    margin: 0 6.4rem;
+                }
+            }
+            img.logo {
+                display: block;
+                width: 45%;
+                height: auto;
+                margin: 2rem auto;
+            }
+        }
+    }
+    .part4 {
+        margin: 0 12rem 12rem 14rem;
+        .maintitle {
+            margin-bottom: 9rem;
+        }
+        .number {
+            display: flex;
+            margin-bottom: 2.8rem;
+            align-items: center;
+            color: #3472A1;
+            font-family: "Noto Sans CJK JP";
+            font-size: 2.4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 2rem; /* 83.333% */
+            letter-spacing: 2.4px;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 1rem;
+                width: 3.6rem;
+                height: 3.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #FFF;
+                font-family: "Montserrat";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 2rem; /* 125% */
+                letter-spacing: 0.64px;
+                background-color: #3472A1;
+                border-radius: 50px;
+            }
+        }
+        .features {
+            display: block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            & > li:not(:last-child) {
+                margin-bottom: 9.8rem;
+            }
+            li {
+                .subtitle {
+                    margin-bottom: 5.6rem;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 2.4rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 2.4rem; /* 100% */
+                    letter-spacing: 2.4px;
+                }
+                .content-wrapper {
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 20%;
+                        height: fit-content;
+                        margin-right: 4rem;
+                    }
+                    .content {
+                        .desc {
+                            margin-bottom: 3.2rem;
+                        }
+                        .sub-title {
+                            margin-bottom: 2.4rem;
+                            color: var(--darkblue, #3472A1);
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 1.6px;
+                        }
+                        .sub-desc {
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 3.0rem; /* 100% */
+                            letter-spacing: 1.6px;
+                        }
+                        .btn-rightarrow {
+                            margin-top: 3.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .part5 {
+        margin: 0 12rem 24rem 12rem;
+    }
+}
+
+#features-background {
+    .container {
+        padding-top: 12rem;
+        padding-bottom: 22rem;
+        .part1 {
+            margin-bottom: 12rem;
+            .maintitle  {
+                margin-bottom: 3.2rem;
+            }
+        }
+        .part2 {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 9.8rem;
+            .left-wrapper {
+                display: block;
+                width: 50%;
+                .maintitle {
+                    margin-bottom: 3.2rem;
+                    text-wrap: nowrap;
+                }
+            }
+            .right-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                width: 30%;
+                img.title {
+                    width: 95%;
+                    margin-bottom: 2.7rem;
+                }
+                img.detail {
+                    width: 100%;
+                }
+            }
+        }
+        .part3 {
+            margin-bottom: 6.4rem;
+            .maintitle {
+                margin-bottom: 6.4rem;
+            }
+            .window {
+                width: 100%;
+                margin-bottom: 8rem;
+                h4.title {
+                    padding: 2rem 0 2rem 3.2rem;
+                    width: 100%;
+                    background-color: #3472A1;
+                    border-radius: 6px 6px 0 0;
+                    color: #FFF;
+                    font-family: Noto Sans CJK JP;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 100% */
+                    letter-spacing: 2.4px;
+                }
+                div.content {
+                    border-radius: 0 0 6px 6px;
+                    border: 1px solid #3472A1;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    flex-wrap: wrap;
+                    padding: 2.4rem;
+                    .wrapper {
+                        padding: 2.4rem;
+                        height: fit-content;
+                        width: 49%;
+                    }
+                    img {
+                        margin-bottom: 2.4rem;
+                    }
+                    img.img-title01 {
+                        width: 32rem;
+                    }
+                    img.img-title02 {
+                        width: 32rem;
+                    }
+                    img.img-title03 {
+                        width: 13rem;
+                    }
+                    img.img-title04 {
+                        width: 25.2rem;
+                    }
+                    img.img-title05 {
+                        width: 18.3rem;
+                    }
+                    img.img-title06 {
+                        width: 12.9rem;
+                    }
+                    img.img-title07 {
+                        width: 34.9rem;
+                    }
+                    img.img-title08 {
+                        width: 8.9rem;
+                    }
+                }
+            }
+            .window.last {
+                .content {
+                    background-color: #E6F5F8;
+                    .maintitle {
+                        margin-bottom: 3rem;
+                        margin-left: 2.4rem;
+                    }
+                }
+            }
+        }
+        .history {
+            margin-bottom: 14rem;
+            .maintitle{
+                margin-bottom: 8rem;
+            }
+            .history-wrapper {
+                & > li:not(:last-child) {
+                    margin-bottom: 9.8rem;
+                }
+                & > li:first-child {
+                    .mark::before {
+                        position: absolute;
+                        top: -4.8rem;
+                        content: "";
+                        height: 4.8rem;
+                        width: 3px;
+                        background-color: #A4A4A4;
+                    }
+                }
+                li {
+                    position: relative;
+                }
+                .eara {
+                    display: flex;
+                    .duration-title {
+                        display: flex;
+                        justify-content: flex-end;
+                        text-align: end;
+                        width: 22%;
+                        color: #3472A1;
+                        font-family: "Montserrat";
+                        font-size: 2rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.6rem; /* 100% */
+                        letter-spacing: 2px;
+                    }
+                    .mark {
+                        width: 10%;
+                        display: flex;
+                        justify-content: center;
+                        &::after {
+                            position: absolute;
+                            top: 32px;
+                            content: "";
+                            height: calc(100% + 9.8rem);
+                            width: 3px;
+                            background-color: #A4A4A4;
+                        }
+                    }
+                    .desc {
+                        width: 68%;
+                    }
+                }
+                .eara.current {
+                    .duration-title {
+                        span {
+                            padding: 2.4rem 2.0rem;
+                            width: fit-content;
+                            height: fit-content;
+                            border-radius: 21px;
+                            background: #0099BD;
+                            color: #FFF;
+                        }
+                    }
+                    .mark::after {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .overview {
+            margin-bottom: 11.7rem;
+            .maintitle {
+                margin-bottom: 4.8rem;
+            }
+            .wrapper {
+                .column{
+                    display: flex;
+                    width: 100%;
+                    position: relative;
+                    padding: 0 !important;
+                    border-bottom: 1px solid #D3D3D3;
+                    .title {
+                        width: 20%;
+                        padding: 2.4rem;
+                        display: flex;
+                        align-items: center;
+                        background-color: #F2F2F2;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.5rem; /* 100% */
+                        letter-spacing: 1.5px;
+                    }
+                    .content {
+                        width: 80%;
+                        padding: 2.4rem;
+                        align-items: center;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2.2rem;
+                        letter-spacing: 1.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#features-media {
+    .container {
+        max-width: 144rem;
+        padding-top: 10rem;
+        padding-bottom: 22.6rem;
+        .part1 {
+            margin-bottom: 8.8rem;
+            .maintitle {
+                margin-bottom: 3.2rem;
+            }
+        }
+        .part2 {
+            margin-bottom: 8.8rem;
+            .subtitle {
+                margin-bottom: 4.8rem;
+            }
+            .wrapper {
+                display: flex;
+                position: relative;
+                img {
+                    width: 45rem;
+                    margin-right: 4.8rem;
+                }
+                .content {
+                    width: 56%;
+                    .title {
+                        margin-bottom: 2.4rem;
+                        color: #333;
+                        font-family: Montserrat;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.4rem; /* 83.333% */
+                        letter-spacing: 2.4px;
+                    }
+                }
+            }
+        }
+        .part3 {
+            margin-bottom: 6.4rem;
+            .subtitle {
+                margin-bottom: 4.0rem;
+            }
+            .wrapper {
+                margin-bottom: 4.0rem;
+                display: flex;
+                li {
+                    img {
+                        width: 100%;
+                        margin-bottom: 2.2rem;
+                    }
+                    .title {
+                        color: #000;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 2.0rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.0rem; /* 100% */
+                        letter-spacing: 2px;
+                    }
+                }
+                & > li:not(:last-child) {
+                    margin-right: 4.8rem;
+                }
+            }
+        }
+        .part4 {
+            margin-bottom: 9.6rem;
+            .desc {
+                margin-bottom: 3.2rem;
+            }
+            .btn-rightarrow {
+                margin-bottom: 4rem;
+            }
+            .img-wrapper {
+                display: grid;
+                position: relative;
+                grid-template-columns: repeat(4, minmax(0px, 1fr));
+                grid-column-gap: 3.2rem;    
+                grid-row-gap: 3.2rem;  
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .part5 {
+            margin-bottom: 7.2rem;
+            .maintitle {
+                margin-bottom: 3.2rem;
+            }
+            .desc {
+                margin-bottom: 4.2rem;
+            }
+            .img-wrapper {
+                margin-bottom: 4.0rem;
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0px, 1fr));
+                grid-column-gap: 3.2rem;    
+                grid-row-gap: 3.2rem;
+                img {
+                    width: 100%;
+                }
+            }
+            .newletter {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0px, 1fr));
+                grid-column-gap: 2.4rem;    
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+#interview {
+    .container {
+        padding-top: 6.4rem;
+        padding-bottom: 22.6rem;
+        .desc {
+            margin-bottom: 4.8rem;
+        }
+        .wrapper {
+            display: block;
+            position: relative;
+            .contents {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(0px, 1fr));
+                grid-column-gap: 7.2rem;    
+                grid-row-gap: 3.2rem;
+                li {
+                    img {
+                        width: 100%;
+                        margin-bottom: 1.2rem;
+                    }
+                    .title {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 2.4rem; /* 150% */
+                        margin-bottom: 4.0rem;
+                        cursor: pointer;
+                        &:hover {
+                            color: #0099BD;
+                        }
+                    }
+                    .category {
+                        background-color: #0099BD;
+                        margin-bottom: 1.2rem;
+                        color: #FFF;
+                        font-family: "Montserrat";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.4rem; /* 100% */
+                    }
+                    .desc {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 14px; /* 100% */
+                    }
+                }
+            }
+            .pagination-wrapper {
+                .pagi-item.num.active {
+                    background-color: #424242;
+                    border-color: #424242;
+                }
+            }
+        }
+    }
+}
+
+#single-interview {
+    padding-top: 4.8rem;
+    padding-bottom: 22.6rem;
+    .desc {
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.6rem; /* 225% */
+        letter-spacing: 1.6px;
+    }
+    .label {
+        margin-bottom: 2.4rem;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2rem; /* 100% */
+        letter-spacing: 2px;
+    }
+    .sub-title {
+        display: block;
+        position: relative;
+        margin-left: 2.4rem;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 2.4px;
+        &::before {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 100%;
+            background-color: #0099BD;
+            left: -2.4rem;
+        }
+    }
+    .part1 {
+        margin-bottom: 5.6rem;
+        .subtitle {
+            margin-bottom: 4rem;
+        }
+        .video-wrapper {
+            padding: 4rem;
+            background-color: #E6F5F8;
+            border-radius: 6px;
+            .title {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    margin-right: 1.2rem;
+
+                }
+                margin-bottom: 2.4rem;
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 2rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 3.2rem; /* 160% */
+                letter-spacing: 2px;
+            }
+            .videos {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0px, 1fr));
+                grid-column-gap: 4.8rem;
+                li {
+                    p {
+                        margin-bottom: 1.6rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.8rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 2rem; /* 111.111% */
+                        letter-spacing: 1.8px;
+                    }
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .profile {
+        .wrapper {
+            padding: 4rem;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0px, 1fr));
+            grid-column-gap: 11.9rem;
+            .left {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .content-wrapper{
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 100%;
+                    grid-row-gap: 3.2rem;
+                    .column {
+                        display: flex;
+                        padding: 0;
+                        .title {
+                            width: 40%;
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 1.6px;
+                        }
+                        .content {
+                            width: 60%;
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 1.6px;
+                            span {
+                                margin-right: 1.2rem;
+                                width: fit-content;
+                                height: fit-content;
+                                border-radius: 4px;
+                                background-color: #0099BD;
+                                padding: 0.6rem 1.2rem;
+                                color: #FFF;
+                                font-family: "Montserrat";
+                                font-size: 1.4rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 1.4rem; /* 100% */
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 4.0rem 3.2rem;
+                border-radius: 6px;
+                background-color: #E6F5F8;
+                .content-wrapper {
+                    width: 100%;
+                    .title {
+                        margin-bottom: 3.2rem;
+                        text-align: center;
+                        color: var(--darkblue, #3472A1);
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.8rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2rem; /* 111.111% */
+                        letter-spacing: 1.8px;
+                    }
+                    .column {
+                        padding: 0;
+                        display: flex;
+                        align-items: center;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 1.6rem; /* 100% */
+                        letter-spacing: 1.6px;
+                        span {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #3472A1;
+                            border-radius: 50px;
+                            margin-right: 2.4rem;
+                            color: #FFF;
+                            font-family: Montserrat;
+                            font-size: 15px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 15px; /* 100% */
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    & > .column:not(:last-child){
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+            .content-wrapper {
+                height: fit-content;
+            }
+        }
+    }
+    .articles {
+        margin-bottom: 8.0rem;
+        .eara {
+            margin-bottom: 2.4rem;
+        }
+        .sub-title {
+            margin-bottom: 4.8rem;
+        }
+        .question {
+            margin-bottom: 2.4rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px; /* 111.111% */
+            letter-spacing: 1.8px;
+            img {
+                width: 6.4rem;
+                margin-right: 2.4rem;
+            }
+        }
+        .answer {
+            margin-bottom: 4rem;
+        }
+    }
+    .private-info {
+        margin-bottom: 6.4rem;
+        .label {
+            margin-bottom: 4.8rem;
+        }
+        .wrapper {
+            .column{
+                display: flex;
+                width: 100%;
+                position: relative;
+                padding: 0 !important;
+                border-bottom: 1px solid #D3D3D3;
+                .title {
+                    width: 20%;
+                    padding: 2.4rem;
+                    display: flex;
+                    align-items: center;
+                    background-color: #F2F2F2;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 1.5rem; /* 100% */
+                    letter-spacing: 1.5px;
+                }
+                .content {
+                    width: 80%;
+                    padding: 2.4rem;
+                    align-items: center;
+                    color: #333;
+                    font-family: "Noto Sans CJK JP";
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 2.2rem;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+    .socials {
+        margin-bottom: 7.2rem;
+        p {
+            margin-bottom: 2rem;
+            color: #000;
+            font-family: "Noto Sans CJK JP";
+            font-size: 1.6rem;
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 1.6px;
+        }
+        .imgs {
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0px, 1fr));
+            grid-column-gap: 1.6rem;
+            img {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+        }
+    }
+    .btn-leftarrow {
+        display: block;
+        width: fit-content;
+        margin: 7.6rem auto 0 auto;
+    }
+}
+
+#column {
+    .container {
+        padding-top: 4.8rem;
+        padding-bottom: 22.6rem;
+        .desc {
+            margin-bottom: 5.2rem;
+        }
+        .wrapper {
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(2, minmax(0px, 1fr));
+            grid-column-gap: 8.0rem;
+            li {
+                display: block;
+                position: relative;
+                width: 100%;
+                .item {
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    padding-top: 4.0rem;
+                    padding-bottom: 3.6rem;
+                    border-radius: 6px;
+                    background: #FFF;
+                    box-shadow: 0px 0px 6px 4px rgba(210, 210, 210, 0.25);
+                }
+                .research {
+                    img {
+                        width: 11.8rem;
+                    }
+                }
+                .consult {
+                    img {
+                        width: 10.7rem;
+                    }
+                }
+                .part1 {
+                    padding: 0 6.0rem;
+                    margin-bottom: 4rem;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        height: fit-content;
+                        margin-right: 4rem;
+                    }
+                    .top-section {
+                        height: fit-content;
+                        .subtitle {
+                            margin-bottom: 2.4rem;
+                        }
+                        .desc {
+                            margin: 0;
+                        }
+                    }
+                }
+                .part2 {
+                    padding: 0 1.6rem;
+                    .label {
+                        margin-bottom: 1.6rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.8rem;
+                        font-style: normal;
+                        line-height: 18px; /* 100% */
+                    }
+                }
+                .white-button {
+                    margin: 0 auto 3.2rem auto;
+                    width: fit-content;
+                }
+            }
+        }
+    }
+}
+
+#column-consultaion {
+    .container {
+        padding-top: 4.8rem;
+        padding-bottom: 22.6rem;
+        display: block;
+        position: relative;
+        .subtitle {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .desc {
+            text-align: center;
+            margin-bottom: 6.4rem;
+        }
+        .categories {
+            width: 90%;
+            margin: 0 auto 4.8rem auto;
+        }
+        .articles-list {
+            display: block;
+            position: relative;
+            width: 100%;
+            .article {
+                position: relative;
+                width: 100%;
+                padding: 1.6rem 2.4rem;
+                .category {
+                    margin-right: 2.4rem;
+                    width: fit-content;
+                }
+                .title {
+                    width: -webkit-fill-available;
+                    margin-left: 2.4rem;
+                }
+                .svg-wrapper {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}
+
+#column-research {
+    .container {
+        padding-top: 4.8rem;
+        padding-bottom: 22.6rem;
+        display: block;
+        position: relative;
+        .desc {
+            text-align: center;
+            margin-bottom: 6.4rem;
+        }
+        .categories {
+            width: 90%;
+            margin: 0 auto 4.8rem auto;
+        }
+        .articles-list {
+            display: block;
+            position: relative;
+            width: 100%;
+            .article {
+                position: relative;
+                width: 100%;
+                padding: 1.6rem 2.4rem;
+                .category {
+                    margin-right: 2.4rem;
+                    width: fit-content;
+                }
+                .title {
+                    width: -webkit-fill-available;
+                    margin-left: 2.4rem;
+                }
+                .svg-wrapper {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+}

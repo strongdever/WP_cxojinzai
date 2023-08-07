@@ -1,14 +1,4 @@
 #footer {
-    #fixed-btns {
-        width: 100%;
-        display: none;
-        position: fixed;
-        bottom: 0.8rem;
-        z-index: 900;
-        .contact-btns {
-            width: 100%;
-        }
-    }
     position: relative;
     padding: 0;
     margin: 0;
@@ -309,6 +299,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #FBFBFB;
         .copyright {
             position: relative;
             color: #4C4949;
@@ -320,54 +311,6 @@
             @include media('sp') {
                 font-size: 1.0rem;
             }
-        }
-    }
-    .footer-end {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: 100%;
-        padding: 11rem 0 0 0 ;
-        background-color: #fff;
-        justify-content: center;
-        align-items: flex-end;
-        @include media("sp") {
-            display: none;
-        }
-        img.female {
-            width: 16.8rem;
-            height: auto;
-        }
-        .contact-btns {
-            display: flex;
-            margin: 2rem 1.5rem;
-            width: fit-content;
-            li {
-                list-style: none;
-                width: 100%;
-                height: fit-content;
-                .desc {
-                    color: #23A1F2;
-                    font-family: "Noto Sans CJK JP";
-                    font-size: 1.5rem;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 1.5rem; /* 100% */
-                    margin-bottom: 1.2rem;
-                }
-                .btn {
-                    margin: 0 auto;
-                }
-            }
-            & > li:first-child {
-                margin-right: 2.4rem;
-            }
-        }
-        img.male {
-            width: 13.6rem;
-            height: auto;
         }
     }
 }

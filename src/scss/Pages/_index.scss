@@ -1,8 +1,10 @@
 .mainview {
     margin-top: 15rem;
     padding-left: 8rem;
+    position: relative;
     width: 100%;
     @include media("sp") {
+        margin-top: 8rem;
         margin-left: 0;
         padding: 0 1.6rem;
     }
@@ -10,10 +12,10 @@
         position: relative;
         z-index: 100;
         @include media("sp") {
+            padding-top: 10rem;
             display: block;
             position: relative;
             float: none;
-            margin-top: 65rem;
         }
         .top-text {
             color: #333;
@@ -70,7 +72,7 @@
             }
             span {
                 margin: 0 0.8rem;
-                color: #125EC9;
+                color: #3472A1;
                 font-family: "Montserrat";
                 font-size: 6.4rem;
                 font-style: normal;
@@ -83,6 +85,12 @@
         }
         .contact-btns {
             margin: 2.4rem 0 3.2rem 0;
+            li {
+                .btn {
+                    width: 30rem !important;
+                    height: 6.4rem !important;
+                }
+            }
             @include media("sp") {
                 width: 100%;
                 margin: 2.0rem 0 2.6rem 0;
@@ -136,22 +144,30 @@
             height: 50rem;
         }
     }
+    #myVideo {
+        position: absolute;
+        width: 70%;
+        right: 0;
+        top: 0;
+    }
     .mans-couple {
-        top: 57rem;
-        right: 3rem;
+        top: 39rem;
+        right: 18rem;
         width: 15%;
         height: auto;
         z-index: 20;
         @include media("sp") {
-            top: 40rem;
-            width: 40%;
+            top: 2rem;
+            width: 35%;
+            left: 4rem;
             height: auto;
         }
     }
 }
 
 .features {
-    margin-top: 14rem;
+    margin-top: 8rem;
+    padding: 0 0 6.0rem 0;
     .title-wrapper {
         margin-bottom: 2.4rem;
     }
@@ -224,18 +240,23 @@
 .community {
     background-color: #DCEEE6;
     padding-bottom: 1rem;
+    padding-top: 3.2rem;
     .title-wrapper {
         display: flex;
         justify-content: center;
         width: 100%;
         text-wrap: nowrap;
         text-align: center;
-        margin: 6rem auto 4.6rem auto;
         .title-text {
-            margin-top: 2.4rem;
+            color: #fff !important;
         }
         .main-title {
-            left: calc(50% - 18.8rem);
+            left: calc(50% - 33.8rem);
+        }
+        img {
+            position: absolute;
+            width: 17rem;
+            left: calc(50% + 40.2rem);
         }
     }
     .desc {
@@ -320,20 +341,21 @@
             width: 13.9rem;
             display: block;
             position: absolute;
-            left: 25.1%;
+            left: calc(50% - 37.8rem);
             top: -7.0rem;   
         }
     }
     .title-wrapper {
         .title-text {
             text-align: end;
+            color: #fff;
         }
         .main-title {
             left: calc(50% - 18.8rem);
         }
     }
     .desc {
-        margin: 6.4rem auto 3.2rem auto;
+        margin: 4.8rem auto 3.2rem auto;
         color: #333;
         text-align: center;
         font-family: "Noto Sans CJK JP";
@@ -512,108 +534,396 @@
             }
         }
     }
+    .btn-rightarrow {
+        margin: 2.4rem auto 0 auto;
+    }
 }
 
-.title-wrapper {
-    display: block;
-    position: relative;
-    .title-text {
-        color: #EDF2F7;
-        font-family: "Montserrat";
-        font-size: 23rem;
+.interview {
+    padding: 3.2rem 0 6.0rem 0;
+    .title-wrapper {
+        .title-text {
+            text-align: start;
+        }
+        .main-title {
+            left: calc(50% + 26.2rem);
+        }
+    }
+    .sub-title {
+        margin: 3.2rem auto 3.2rem 0;
+        color: #333;
+        font-family:"Noto Sans CJK JP";
+        font-size: 3.2rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 25rem; /* 108.696% */
+        line-height: 4.4rem; /* 100% */
     }
-    .main-title {
-        display: block;
-        position: absolute;
-        top: calc(50% - 1.7rem);
-        left: 88rem;
+    .desc {
+        margin-bottom: 6.4rem;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.6rem; /* 225% */
     }
-}
-
-.main-title {
-    color: #333;
-    font-family: "Noto Sans CJK JP";
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 4rem; /* 100% */
-    letter-spacing: 0.04em;
-}
-
-.news-wrapper {
-    display: block;
-    position: relative;
-    .news-item {
-        padding: 0 0 1.9rem 0;
-        border-bottom: 1px solid #D3D3D3;
-        .item {
-            display: flex;
-            li {
-                width: fit-content;
-                .date {
-                    color: #000;
-                    font-family: "Montserrat";
-                    font-size: 1.6rem;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 1.6rem; /* 100% */
+    .slider-wrapper {
+        display: flex;
+        width: fit-content;
+        position: relative;
+        .slider-item {
+            display: block;
+            position: relative;
+            margin-right: 3.9rem;
+            width: 37.4rem;
+            .item-wrapper {
+                display: block;
+                position: relative;
+                width: 100%;
+                border-radius: 6px;
+                img {
+                    border-radius: 6px 6px 0 0;
+                    width: 100%;
+                    height: auto;
                 }
+                .content-wrapper {
+                    padding: 1.2rem 0;
+                    .title {
+                        margin-bottom: 1.2rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 2.4rem; /* 150% */
+                        &:hover {
+                            color: #1BA2C5;
+                        }
+                    }
+                    .category {
+                        margin-bottom: 1.2rem;
+                        padding: 0.6rem 1.2rem;
+                        background-color: #1BA2C5;
+                        color: #FFF;
+                        font-family: "Montserrat";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.4rem; /* 100% */
+                    }
+                    .name {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 2.4rem; /* 100% */
+                    }
+                }
+            }
+        }
+    }
+    .btn-rightarrow {
+        margin: 2.4rem auto;
+    }
+}
+
+.flow {
+    background-color: #FEF6EC;
+    padding: 3.2rem 0 6.0rem 0;
+    .title-wrapper {
+        .title-text {
+            text-align: end;
+        }
+        .main-title {
+            left: calc(50% - 18.8rem);
+        }
+    }
+    .sub-title {
+        margin: 3.2rem auto 3.2rem 0;
+        color: #333;
+        font-family:"Noto Sans CJK JP";
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.4rem; /* 100% */
+    }
+    .desc {
+        margin-bottom: 6.4rem;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 3.6rem; /* 225% */
+    }
+    .content-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 6.8rem;
+        img {
+            width: 46%;
+            height: auto;
+        }
+        .steps-wrapper {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            .steps {
+                display: flex;
+                flex-direction: column;
+                li {
+                    .step-wrapper {
+                        display: flex;
+                        align-items: center;
+                        .number {
+                            display: flex;
+                            position: relative;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin-right: 3.2rem;
+                            width: 6.4rem;
+                            height: 6.4rem;
+                            background-color: #3472A1;
+                            border-radius: 50px;
+                            .step-text {
+                                color: #FFF;
+                                font-family: "Montserrat";
+                                font-size: 1.2rem;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: 1.2rem; /* 100% */
+                                letter-spacing: 1.2px;
+                                margin-top: 0.8rem;
+                                margin-bottom: 0.3rem;
+                            }
+                            .step-number {
+                                color: #FFF;
+                                font-family: "Montserrat";
+                                font-size: 2.0rem;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 2.4rem; /* 100% */
+                                letter-spacing: 3.84px;
+                            }
+                        }
+                        .step-content {
+                            color: #3472A1;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 2rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 2.4rem; /* 120% */
+                            letter-spacing: 2px;
+                        }
+                    }
+                }
+                & > li:not(:last-child) {
+                    margin-bottom: 4rem;
+                    .step-wrapper {
+                        .number {
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                width: 2px;
+                                height: 4.2rem;
+                                background-color: #3472A1;
+                                bottom: -4.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-rightarrow {
+        right: -54.9%;
+    }
+}
+
+.column {
+    padding: 3.2rem 0 6.0rem 0;
+    .title-wrapper {
+        margin-bottom: 3.2rem;
+        .title-text {
+            text-align: start;
+        }
+        .main-title {
+            left: calc(50% + 3.2rem);
+        }
+    }
+    .contents {
+        display: flex;
+        position: relative;
+        width: 100%;
+        & > .content-item:first-child {
+            margin-right: 4rem;
+            .career-wrapper {
+                img {
+                    width: 11.8rem;
+                }
+            }
+        }
+        & > .content-item:last-child {
+            .career-wrapper {
+                img {
+                    width: 10.7rem;
+                }
+            }
+        }
+        .content-item {
+            width: 100%;
+            border-radius: 6px;
+            background: #FFF;
+            box-shadow: 0px 0px 6px 4px rgba(210, 210, 210, 0.25);
+            @include media("tc") {
+                max-width: 48%;
+            }
+            .career-wrapper {
+                padding: 4rem 6rem 0 6rem;
+                display: flex;
+                align-items: center;
+                margin-bottom: 4rem;
+                @include media("tb") {
+                    padding: 3.2rem 2.4rem 0 2.4rem;
+                }
+                @include media("tc") {
+                    padding: 3.2rem 3.6rem 0 3.6rem;
+                }
+                img {
+                    margin-right: 4rem;
+                }
+                .career-text {
+                    .title {
+                        margin-bottom: 1.6rem;
+                        color: #333;
+                        font-family: "Montserrat";
+                        font-size: 2.4rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 28px; /* 116.667% */
+                        letter-spacing: 2.4px;
+                    }
+                    .desc {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.5rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px; /* 213.333% */
+                        text-wrap:nowrap;
+                    };
+                }
+            }
+            .article-text {
+                margin-left: 4rem;
+                margin-bottom: 1.6rem;
+                color: #333;
+                font-family: "Noto Sans CJK JP";
+                font-size: 1.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18px; /* 100% */
+            }
+            .articles {
+                display: block;
+                position: relative;
+                margin-bottom: 2.4rem;
+                li {
+                    display: flex;
+                    position: relative;
+                    margin: 0 1.6rem;
+                    padding: 2.4rem 2.3rem;
+                    width: auto;
+                    border-bottom: 1px solid #AEAEAE;
+                    .number {
+                        width: 2%;
+                        margin-right: 2.4rem;
+                        color: #3472A1;
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-size: 1.8rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 18px; /* 100% */
+                    }
+                    .title {
+                        width: 86%;
+                        margin-right: 1.6rem;
+                        color: #333333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px; /* 100% */
+                        &:hover {
+                            color: #1BA2C5;
+                        }
+                    }
+                }
+            }
+            .btn-rightarrow {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 3.2rem;
+            }
+        }
+    }
+}
+
+.aboutus {
+    padding: 3.2rem 0 25.7rem 0;
+    background-color: rgba(52, 114, 161, 0.10);;
+    .title-wrapper {
+        margin-bottom: 3.2rem;
+        .title-text {
+            text-align: end;
+        }
+        .main-title {
+            left: calc(50% - 18.8rem);
+        }
+    }
+    .container {
+        width: 90% !important;
+        max-width: 140rem;
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7.2rem;
+            .left-wrapper {
+                width: 49%;
                 .title {
-                    display: block;
+                    margin-bottom: 3.2rem;
+                    color: #333;
+                    font-family: "Inter";
+                    font-size: 3.2rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .desc {
+                    margin-bottom: 4rem;
                     color: #333;
                     font-family: "Noto Sans CJK JP";
                     font-size: 1.6rem;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 2.6rem; /* 100% */
-
+                    line-height: 3.6rem; /* 225% */
+                    letter-spacing: 1.6px;
                 }
             }
-            & > li:not(:last-child) {
-                margin-right: 3.6rem;
-            }
-            & > li:first-child {
-                display: block;
-                width: 10rem;
-            }
-            & > li:nth-child(2) {
-                display: block;
-                width: 22rem;
-            }
-            & > li:last-child {
-                display: block;
-                width: 70%;
+            .right-wrapper {
+                width: 46%;
+                img {
+                    width: 100%;
+                }
             }
         }
+        .aboutus-img {
+            width: 100%;
+        }
     }
-    .news-item:not(:last-child) {
-        margin-bottom: 1.9rem;
-    }
-}
-
-.category {
-    width: fit-content;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 0.6rem 1.4rem;
-    text-wrap: nowrap;
-    background-color: #D5E3EC;
-    border-radius: 50px;
-    color: #333;
-    font-family: "Noto Sans CJK JP";
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 2.1rem;
-
 }

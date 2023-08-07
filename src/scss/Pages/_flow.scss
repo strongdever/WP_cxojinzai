@@ -1,0 +1,206 @@
+#flow {
+    .content {
+        padding: 6.8rem 12rem 22.7rem 12rem;
+        .top.desc {
+            margin-bottom: 3.3rem;            
+        }
+        .btn-rightarrow {
+            margin-bottom: 10.4rem;
+        }
+        .main-title {
+            display: block;
+            position: relative;
+            margin-bottom: 8rem;
+            color: #333;
+            font-family: "Noto Sans CJK JP";
+            font-size: 3.2rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 3.2rem; /* 100% */
+            letter-spacing: 3.2px;
+            margin-left: 2.3rem;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 0.6rem;
+                height: 3.6rem;
+                background-color: #0099bd;
+                left: -2.3rem;
+            }
+        }
+        .flow-steps {
+            display: block;
+            position: relative;
+            margin-bottom: 10.4rem;
+            .each-step:not(:last-child) {
+                padding-bottom: 7.2rem;
+            }
+            .each-step:not(:last-child)::before {
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 100%;
+                left: 3.2rem;
+                top: 3.2rem;
+                background-color: #3472A1;                
+            }
+            .step-wrapper {
+                display: flex;
+                .step-number {
+                    aspect-ratio: 1 / 1;
+                    display: flex;
+                    position: relative;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-right: 3.2rem;
+                    width: 6.4rem;
+                    height: 6.4rem;
+                    background-color: #3472A1;
+                    border-radius: 50px;
+                    .label {
+                        color: #FFF;
+                        font-family: "Montserrat";
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 1.2rem;
+                        letter-spacing: 1.2px;
+                        margin-top: 0.3rem;
+                        margin-bottom: 0.3rem;
+                    }
+                    .num {
+                        color: #FFF;
+                        font-family: "Montserrat";
+                        font-size: 2.8rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 2.4rem;
+                        letter-spacing: 3.8px;
+                    }
+                }
+                .step-content {
+                    margin-right: 6.2rem;
+                    width: 70%;
+                    .step-title {
+                        margin-bottom: 2.4rem;
+                        color: var(--darkblue, #3472A1);
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 2.4rem;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 2.4rem; /* 100% */
+                        letter-spacing: 2.4px;
+                    }
+                    .desc {
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.6rem;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 3.2rem; /* 200% */
+                        letter-spacing: 1.6px;
+                    }
+                    .contact-btns {
+                        margin-top: 4rem;
+                    }
+                    .note {
+                        margin-top: 2.4rem;
+                        color: #333;
+                        font-family: "Noto Sans CJK JP";
+                        font-size: 1.4rem;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 1.4rem; /* 100% */
+                        letter-spacing: 1.4px;
+                    }
+                    .method {
+                        margin-top: 2.4rem;
+                        padding: 2.4rem;
+                        background-color: #E6F5F8;
+                        .title {
+                            margin-bottom: 1.6rem;
+                            color: #333;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 1.6rem;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.6rem; /* 100% */
+                            letter-spacing: 1.6px;
+                        }
+                        .content {
+                            padding: 0;
+                            color: #000;
+                            font-family: "Noto Sans CJK JP";
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px; /* 200% */
+                            letter-spacing: 1.6px;
+                        }
+                    }
+                }
+                .img-wrapper {
+                    display: block;
+                    position: relative;
+                    margin-left: auto;
+                    height: 100% !important;
+                    margin-top: auto;
+                    img {
+                        display: block;
+                        width: 24.6rem;
+                        margin-top: auto;
+                        height: auto;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+    .btn-rightarrow {
+        margin-top: 4.8rem;
+        margin-bottom: 7.2rem;
+    }
+    .related-label {
+        margin-bottom: 2.8rem;
+        padding-bottom: 1.6rem;
+        color: #333;
+        font-family: "Noto Sans CJK JP";
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.0rem; /* 125% */
+        letter-spacing: 1.6px;
+        border-bottom: 3px solid #0099BD;
+    }
+    .gotopage {
+        margin-bottom: 2.4rem;
+        color: #333;
+        font-family: Noto Sans CJK JP;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 100% */
+        letter-spacing: 1.6px;
+        display: flex;
+        width: fit-content;
+        &:hover {
+            color: #3472A1;
+        }
+        span {
+            width: 2.2rem;
+            height: 2.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0099BD;
+            border-radius: 50px;
+            margin-right: 1.8rem;
+            cursor: pointer;
+            i {
+                color: #fff;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

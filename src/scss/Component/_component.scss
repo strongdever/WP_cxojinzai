@@ -116,7 +116,7 @@
     }
 }
 
-.btn-rightarrow {
+.btn-rightarrow, .btn-leftarrow {
     position: relative;
     display: flex;
     align-items: center;
@@ -146,14 +146,16 @@
         width: 100%;
         padding: 1.8rem 2.4rem 1.8rem 2.4rem;
     }
+}
+.btn-rightarrow {
     svg{
         margin-left: 1rem;
     }
     &:hover svg {
-        animation: bounce 0.8s infinite;
+        animation: bounce-right 0.8s infinite;
       }
       
-      @keyframes bounce {
+      @keyframes bounce-right {
         0%, 100% {
           transform: translateX(0);
         }
@@ -166,7 +168,26 @@
       }
 }
 
-
+.btn-leftarrow {
+    svg{
+        margin-right: 1rem;
+    }
+    &:hover svg {
+        animation: bounce-left 0.8s infinite;
+      }
+      
+      @keyframes bounce-left {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        30% {
+          transform: translateX(-15px);
+        }
+        /* 60% {
+          transform: translateX(12px);
+        } */
+      }
+}
 
 .dark-btn {
     position: relative;
@@ -1681,5 +1702,32 @@ body.wp-autoresize {
                 }
             }
         }
+    }
+}
+
+.category {
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0.6rem 1.4rem;
+    text-wrap: nowrap;
+    background-color: #D5E3EC;
+    border-radius: 50px;
+    color: #333;
+    font-family: "Noto Sans CJK JP";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.1rem;
+    &:hover {
+        background-color: #3472A1;
+        color: #fff;
     }
 }
